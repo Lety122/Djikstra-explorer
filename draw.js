@@ -39,14 +39,12 @@ function update(){
 						drawPath(ctx2,path,found_path_color);
 						inside = true;
 						currentNode = v;
-						console.log("czesc");
 						break;
 				}
 				else if (!(mouseCoordsVar.x > nodes[currentNode].x-15 && mouseCoordsVar.x < nodes[currentNode].x+15 && mouseCoordsVar.y > nodes[currentNode].y-15 && mouseCoordsVar.y < nodes[currentNode].y+15) && inside){
 						ctx2.clearRect(0,0,canvas.width, canvas.height);
   					inside = false;
   					currentNode = 'fallback';
-  					console.log("pryc");
 				}
 		}
 }

@@ -1,18 +1,16 @@
-/*var network = {
-	S : {A : 1, D : 4, F : 1},
-	A : {B : 1},
-	B : {C : 1, D : 1},
-	C : {E : 2},
-	D : {E : 2}, 
-	E : {},
-	F : {E : 5}
-};*/
 
-var network = createNetwork(26);
-
-undirect(network);
-
+//TWEAKING VARIABLES
+let number_of_nodes = 26;
+let directed_bool = false;
 var source = 'A';
+
+//ACTUAL CODE
+
+var network = createNetwork(number_of_nodes);
+
+if (directed_bool){
+	undirect(network);
+}
 
 var explorationProcess = [];
 
